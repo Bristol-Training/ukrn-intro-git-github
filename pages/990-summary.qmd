@@ -1,0 +1,26 @@
+---
+title: Summary
+---
+
+
+Congratulations - you've now learned enough to start using git to 
+version control your files and back them up to a secure location.
+
+Now that you know how git works from the command line, you are ready to start using
+git within a graphical interface. All of the git graphical interfaces are just running
+the above git commands. There are many graphical interfaces available, a lot of
+which are [described here](https://git-scm.com/downloads/guis).
+
+[GitHub Desktop](https://desktop.github.com/) is very good, as is the
+[GitHub Mobile App](https://github.com/mobile). I also really like the integration
+of git into [Visual Studio Code](https://code.visualstudio.com).
+[Sublime Merge](https://www.sublimemerge.com/) is also recommended,
+as is [git-cola](https://git-cola.github.io/).
+
+In short, choose the tool that works best for you. Have a play
+with them and find the one that works for you!
+
+
+
+
+

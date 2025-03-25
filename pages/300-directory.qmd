@@ -1,0 +1,41 @@
+---
+title: "Creating directories"
+---
+
+
+Git is a tool that is used to version control a *directory of files*. To start, we
+must first create a directory that will contain the files that will be version controlled.
+
+You can call the directory anything you want. For this workshop, we will call
+the directory `versioned_dir`. To create this, type into the command window;
+
+```{.bash}
+mkdir versioned_dir
+```
+
+This will have created a new directory called `versioned_dir`. We now need to change 
+into this directory. Please do that by typing this into the command window;
+
+```{.bash}
+cd versioned_dir
+```
+
+## Initialising version control
+
+The next step is to tell git that we want to start version controlling the files in this
+directory. We do that by initialise git using the `git init` command. Type this into the 
+command window;
+
+```{.bash}
+git init
+```
+
+You should see something like this printed as output to the screen;
+
+```
+Initialized empty Git repository in /Users/ab01234/versioned_dir/.git/
+```
+
+This has told git to initialise a new [repository](https://dictionary.cambridge.org/dictionary/english/repository) in which versions of files in this directory will be saved. This repository
+is empty, as we have not yet saved any versions.
+

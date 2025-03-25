@@ -1,0 +1,7 @@
+---
+title: Contributors
+---
+
+This course was originally written by Christopher Woods and published at <https://chryswoods.com/beginning_git>. 
+
+The course has since been modified by the Jean Golding Institute and adapted for the [UKRN](https://www.ukrn.org/).

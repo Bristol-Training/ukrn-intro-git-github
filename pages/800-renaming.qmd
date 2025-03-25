@@ -1,0 +1,77 @@
+---
+title: "Renaming and removing files"
+---
+
+
+So far we have only added and changed files in our version controlled working directory, and git was clever enough to work out what it needed to do. However, git does not know how to automatically work out when you have renamed or removed files.
+
+### Renaming files
+
+To rename a file, you have to use `git mv`. We are going to rename the file `something.md` to `background.md`. To do this, type
+
+```{.bash}
+git mv something.md background.md
+```
+
+If you now type `ls` you should see that `something.md` has been renamed (moved) to `background.md`.
+
+Now, `git status` should show something like
+
+```
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	renamed:    something.md -> background.md
+```
+
+To commit this change, use `git commit -a` as normal, remembering to add a suitable commit message, e.g.
+
+```
+Have renamed something.md to background.md to better reflect
+the contents of the file
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# Changes to be committed:
+#       renamed:    something.md -> background.md
+#
+```
+
+A quick check of `git status` should then show that your working directory is clean.
+
+### Removing files
+
+To remove a file use `git rm`. To remove `background.md` we just need to type;
+
+```{.bash}
+git rm background.md
+```
+
+If you now type `ls` you should see that background.md has been removed.
+
+Now `git status` should show something like
+
+```
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	deleted:    background.md
+```
+
+Note that this has removed the file from the working directory. The **file will still exist in old
+versions** stored in the repository. We can restore this file using;
+
+```{.bash}
+git checkout main background.md
+```
+
+This is the real power of using version control. It is *very difficult* to actually lose files
+or accidentally delete data. As long as you have saved a snapshot version into the repository, then
+you will always be able to restore the data.
+
+Indeed, git even tries to prevent you from losing data that is not saved to the repository. 
+The command `git rm FILE` will only work if `FILE` is tracked by git and has no changes compared
+to the last version saved in the repository. To force removal of a file in this case, you need
+to use `git rm -f FILE`, where the flag `-f` means "force".

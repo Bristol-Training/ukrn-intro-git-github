@@ -1,0 +1,44 @@
+---
+title: Introduction
+---
+
+::: {#n1 .callout-note title="As part of UKRN training" icon=false}
+
+![](assets/ukrn.png){fig-align="center"}
+
+The UK Reproducibility Network (UKRN) is a national peer-led consortium that seeks to understand the factors that contribute to poor research reproducibility and replicability, and develop collaborative approaches to counter these, in order to improve the trustworthiness and quality of research. 
+:::
+
+Git is a version control system that allows you to save multiple versions of a file or directory. This is useful to allow you to keep a record of all changes made to a file, and to move backwards and forwards in time through different versions of it.
+
+There are various implementations of version control tools. However, Git has risen to become almost the standard version control system with extremely high adoption and widespread use across academia, personal projects and industry. The [State of the Octoverse](https://octoverse.github.com) gives a good idea of how widespread git has become.
+
+Git was originally developed to manage version control for the source code of the Linux kernel. Despite starting as a tool for programmers, it is now used to version control any kind of file, and is now widely used in academia
+for a whole host of projects, e.g.
+
+* Saving different versions of data in a study
+* Saving different versions of analysis scripts
+* Saving different versions of group documents, e.g. websites, agreements, wikis or collaboration documents
+
+
+## Why is it important to use version control?
+
+Version control is vital for research reproducibility as it helps track changes in data and code over time. This is particularly important in scientific projects where data and analysis evolve continuously. By using version control, researchers can:
+
+- **Track Provenance:** Understand what version of the data and code was used to produce specific results.
+- **Ensure Reproducibility:** Allow others to reproduce findings by providing access to the exact versions of data and code used.
+- **Collaborate Effectively:** Facilitate collaboration among researchers by managing changes and tracking contributions.
+
+
+## Intended learning outcomes
+
+By the end of this course, you will:
+
+- Understand the importance of version control for research reproducibility
+- Create a directory that will contain files that can be version controlled
+- Save multiple versions of files
+- Retrieve old versions of files
+- Add, rename and delete version controlled files
+- Back up you version controlled files to a cloud service such as GitHub
+- Write markdown to describe your version controlled files
+
