@@ -255,6 +255,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Git is open source, free, and is available for easy installation on a range of operating systems, including Windows, macOS and Linux.</p>
 <p>You will need to have installed the command line version control tool “git”. The instructions below tell you how to install it on each of these platforms.</p>
+<div id="n1" class="callout callout-style-default callout-tip callout-titled" title="Command Line Interface">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Command Line Interface
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If you don’t have experience working with a Command Line Interface, you can check the training course <a href="https://bristol-training.github.io/introduction-to-command-line-interface/">Introduction to the Command Line Interface</a>.</p>
+</div>
+</div>
 <section id="windows" class="level4">
 <h4 class="anchored" data-anchor-id="windows">Windows</h4>
 <p>You can install git by downloading an installer from <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>.</p>
@@ -412,7 +425,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/Bristol-Training\.github\.io\/ukrn-intro-git-github\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
