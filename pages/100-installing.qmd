@@ -9,6 +9,10 @@ including Windows, macOS and Linux.
 You will need to have installed the command line version control tool "git". 
 The instructions below tell you how to install it on each of these platforms.
 
+::: {#n1 .callout-tip title="Command Line Interface" icon=true}
+If you don't have experience working with a Command Line Interface, you can check the training course [Introduction to the Command Line Interface](https://bristol-training.github.io/introduction-to-command-line-interface/).
+:::
+
 ### Windows
 
 You can install git by downloading an
